@@ -6,7 +6,7 @@ run = True
 # A loop to run game, Until the correct guess.
 while(run):
     # random number generator between 1 to 100.
-    rand_no = random.randint(2,99)
+    rand_no = random.randint(1,100)
     # A counter variable which use to store number of guesses.
     count = 0
     while(True):
@@ -22,6 +22,6 @@ while(run):
     
     print("You Guess the number in ",count," attempts.\n")
     # Add a conditon if you want play or not 
-    play = input("Do you want to play again? (y/n)")
+    play = input("Do you want to play again? (y/n)\n")
     if 'n' == play.lower():
         run = False
